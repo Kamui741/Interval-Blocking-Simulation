@@ -30,6 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape98 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape97 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape96 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape95 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape94 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape93 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.ovalShape30 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
+            this.ovalShape29 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
+            this.lineShape92 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.ovalShape4 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
+            this.ovalShape3 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
+            this.lineShape79 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape91 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.ovalShape28 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
             this.ovalShape27 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
@@ -155,18 +167,6 @@
             this.停止 = new System.Windows.Forms.Button();
             this.下行通过 = new System.Windows.Forms.Button();
             this.一接近 = new System.Windows.Forms.Button();
-            this.lineShape79 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.ovalShape3 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
-            this.ovalShape4 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
-            this.lineShape92 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.ovalShape29 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
-            this.ovalShape30 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
-            this.lineShape93 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape94 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape95 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape96 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape97 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.lineShape98 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -310,6 +310,97 @@
             this.shapeContainer1.Size = new System.Drawing.Size(1164, 637);
             this.shapeContainer1.TabIndex = 0;
             this.shapeContainer1.TabStop = false;
+            // 
+            // lineShape98
+            // 
+            this.lineShape98.BorderColor = System.Drawing.Color.Red;
+            this.lineShape98.BorderWidth = 2;
+            this.lineShape98.Name = "lineShape98";
+            this.lineShape98.X1 = 405;
+            this.lineShape98.X2 = 495;
+            this.lineShape98.Y1 = 178;
+            this.lineShape98.Y2 = 178;
+            // 
+            // lineShape97
+            // 
+            this.lineShape97.Name = "lineShape97";
+            this.lineShape97.X1 = 405;
+            this.lineShape97.X2 = 405;
+            this.lineShape97.Y1 = 168;
+            this.lineShape97.Y2 = 187;
+            // 
+            // lineShape96
+            // 
+            this.lineShape96.Name = "lineShape96";
+            this.lineShape96.X1 = 405;
+            this.lineShape96.X2 = 405;
+            this.lineShape96.Y1 = 223;
+            this.lineShape96.Y2 = 242;
+            // 
+            // lineShape95
+            // 
+            this.lineShape95.BorderWidth = 2;
+            this.lineShape95.Name = "lineShape95";
+            this.lineShape95.X1 = 405;
+            this.lineShape95.X2 = 495;
+            this.lineShape95.Y1 = 233;
+            this.lineShape95.Y2 = 233;
+            // 
+            // lineShape94
+            // 
+            this.lineShape94.Name = "lineShape94";
+            this.lineShape94.X1 = 405;
+            this.lineShape94.X2 = 405;
+            this.lineShape94.Y1 = 252;
+            this.lineShape94.Y2 = 271;
+            // 
+            // lineShape93
+            // 
+            this.lineShape93.Name = "lineShape93";
+            this.lineShape93.X1 = 405;
+            this.lineShape93.X2 = 405;
+            this.lineShape93.Y1 = 140;
+            this.lineShape93.Y2 = 159;
+            // 
+            // ovalShape30
+            // 
+            this.ovalShape30.Location = new System.Drawing.Point(435, 141);
+            this.ovalShape30.Name = "ovalShape30";
+            this.ovalShape30.Size = new System.Drawing.Size(17, 17);
+            // 
+            // ovalShape29
+            // 
+            this.ovalShape29.Location = new System.Drawing.Point(418, 141);
+            this.ovalShape29.Name = "ovalShape29";
+            this.ovalShape29.Size = new System.Drawing.Size(17, 17);
+            // 
+            // lineShape92
+            // 
+            this.lineShape92.Name = "lineShape92";
+            this.lineShape92.X1 = 406;
+            this.lineShape92.X2 = 417;
+            this.lineShape92.Y1 = 150;
+            this.lineShape92.Y2 = 150;
+            // 
+            // ovalShape4
+            // 
+            this.ovalShape4.Location = new System.Drawing.Point(376, 253);
+            this.ovalShape4.Name = "ovalShape4";
+            this.ovalShape4.Size = new System.Drawing.Size(17, 17);
+            // 
+            // ovalShape3
+            // 
+            this.ovalShape3.Location = new System.Drawing.Point(359, 253);
+            this.ovalShape3.Name = "ovalShape3";
+            this.ovalShape3.Size = new System.Drawing.Size(17, 17);
+            // 
+            // lineShape79
+            // 
+            this.lineShape79.Name = "lineShape79";
+            this.lineShape79.X1 = 393;
+            this.lineShape79.X2 = 404;
+            this.lineShape79.Y1 = 262;
+            this.lineShape79.Y2 = 262;
             // 
             // lineShape91
             // 
@@ -553,6 +644,8 @@
             // 
             // ovalShape2
             // 
+            this.ovalShape2.BackColor = System.Drawing.Color.Red;
+            this.ovalShape2.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
             this.ovalShape2.Location = new System.Drawing.Point(236, 94);
             this.ovalShape2.Name = "ovalShape2";
             this.ovalShape2.Size = new System.Drawing.Size(17, 17);
@@ -1313,96 +1406,6 @@
             this.一接近.TabIndex = 9;
             this.一接近.Text = "一接近";
             this.一接近.UseVisualStyleBackColor = true;
-            // 
-            // lineShape79
-            // 
-            this.lineShape79.Name = "lineShape79";
-            this.lineShape79.X1 = 393;
-            this.lineShape79.X2 = 404;
-            this.lineShape79.Y1 = 262;
-            this.lineShape79.Y2 = 262;
-            // 
-            // ovalShape3
-            // 
-            this.ovalShape3.Location = new System.Drawing.Point(359, 253);
-            this.ovalShape3.Name = "ovalShape3";
-            this.ovalShape3.Size = new System.Drawing.Size(17, 17);
-            // 
-            // ovalShape4
-            // 
-            this.ovalShape4.Location = new System.Drawing.Point(376, 253);
-            this.ovalShape4.Name = "ovalShape4";
-            this.ovalShape4.Size = new System.Drawing.Size(17, 17);
-            // 
-            // lineShape92
-            // 
-            this.lineShape92.Name = "lineShape92";
-            this.lineShape92.X1 = 406;
-            this.lineShape92.X2 = 417;
-            this.lineShape92.Y1 = 150;
-            this.lineShape92.Y2 = 150;
-            // 
-            // ovalShape29
-            // 
-            this.ovalShape29.Location = new System.Drawing.Point(418, 141);
-            this.ovalShape29.Name = "ovalShape29";
-            this.ovalShape29.Size = new System.Drawing.Size(17, 17);
-            // 
-            // ovalShape30
-            // 
-            this.ovalShape30.Location = new System.Drawing.Point(435, 141);
-            this.ovalShape30.Name = "ovalShape30";
-            this.ovalShape30.Size = new System.Drawing.Size(17, 17);
-            // 
-            // lineShape93
-            // 
-            this.lineShape93.Name = "lineShape93";
-            this.lineShape93.X1 = 405;
-            this.lineShape93.X2 = 405;
-            this.lineShape93.Y1 = 140;
-            this.lineShape93.Y2 = 159;
-            // 
-            // lineShape94
-            // 
-            this.lineShape94.Name = "lineShape94";
-            this.lineShape94.X1 = 405;
-            this.lineShape94.X2 = 405;
-            this.lineShape94.Y1 = 252;
-            this.lineShape94.Y2 = 271;
-            // 
-            // lineShape95
-            // 
-            this.lineShape95.BorderWidth = 2;
-            this.lineShape95.Name = "lineShape95";
-            this.lineShape95.X1 = 405;
-            this.lineShape95.X2 = 495;
-            this.lineShape95.Y1 = 233;
-            this.lineShape95.Y2 = 233;
-            // 
-            // lineShape96
-            // 
-            this.lineShape96.Name = "lineShape96";
-            this.lineShape96.X1 = 405;
-            this.lineShape96.X2 = 405;
-            this.lineShape96.Y1 = 223;
-            this.lineShape96.Y2 = 242;
-            // 
-            // lineShape97
-            // 
-            this.lineShape97.Name = "lineShape97";
-            this.lineShape97.X1 = 405;
-            this.lineShape97.X2 = 405;
-            this.lineShape97.Y1 = 168;
-            this.lineShape97.Y2 = 187;
-            // 
-            // lineShape98
-            // 
-            this.lineShape98.BorderWidth = 2;
-            this.lineShape98.Name = "lineShape98";
-            this.lineShape98.X1 = 405;
-            this.lineShape98.X2 = 495;
-            this.lineShape98.Y1 = 178;
-            this.lineShape98.Y2 = 178;
             // 
             // pictureBox1
             // 
