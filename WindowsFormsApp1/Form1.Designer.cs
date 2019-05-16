@@ -159,14 +159,13 @@
             this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.复位_左 = new System.Windows.Forms.Button();
+            this.复位 = new System.Windows.Forms.Button();
             this.二接近 = new System.Windows.Forms.Button();
             this.三接近 = new System.Windows.Forms.Button();
             this.一般信号点 = new System.Windows.Forms.Button();
             this.电路显示 = new System.Windows.Forms.Button();
             this.发码显示 = new System.Windows.Forms.Button();
-            this.停止 = new System.Windows.Forms.Button();
-            this.复位_右 = new System.Windows.Forms.Button();
+            this.开车 = new System.Windows.Forms.Button();
             this.一接近 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -326,7 +325,7 @@
             this.lineShape98.X2 = 495;
             this.lineShape98.Y1 = 178;
             this.lineShape98.Y2 = 178;
-            this.lineShape98.Click += new System.EventHandler(this.LineShape98_Click);
+            this.lineShape98.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape97
             // 
@@ -352,7 +351,7 @@
             this.lineShape95.X2 = 495;
             this.lineShape95.Y1 = 233;
             this.lineShape95.Y2 = 233;
-            this.lineShape95.Click += new System.EventHandler(this.LineShape95_Click);
+            this.lineShape95.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape94
             // 
@@ -897,7 +896,6 @@
             this.lineShape57.X2 = 235;
             this.lineShape57.Y1 = 121;
             this.lineShape57.Y2 = 140;
-            this.lineShape57.Click += new System.EventHandler(this.LineShape57_Click);
             // 
             // lineShape56
             // 
@@ -907,6 +905,7 @@
             this.lineShape56.X2 = 980;
             this.lineShape56.Y1 = 233;
             this.lineShape56.Y2 = 240;
+            this.lineShape56.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape55
             // 
@@ -916,7 +915,7 @@
             this.lineShape55.X2 = 1015;
             this.lineShape55.Y1 = 240;
             this.lineShape55.Y2 = 283;
-            this.lineShape55.Click += new System.EventHandler(this.LineShape55_Click);
+            this.lineShape55.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape54
             // 
@@ -926,7 +925,7 @@
             this.lineShape54.X2 = 1085;
             this.lineShape54.Y1 = 283;
             this.lineShape54.Y2 = 283;
-            this.lineShape54.Click += new System.EventHandler(this.LineShape54_Click);
+            this.lineShape54.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape53
             // 
@@ -936,7 +935,7 @@
             this.lineShape53.X2 = 250;
             this.lineShape53.Y1 = 283;
             this.lineShape53.Y2 = 283;
-            this.lineShape53.Click += new System.EventHandler(this.LineShape53_Click);
+            this.lineShape53.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape52
             // 
@@ -946,6 +945,7 @@
             this.lineShape52.X2 = 288;
             this.lineShape52.Y1 = 238;
             this.lineShape52.Y2 = 233;
+            this.lineShape52.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape51
             // 
@@ -955,7 +955,7 @@
             this.lineShape51.X2 = 250;
             this.lineShape51.Y1 = 238;
             this.lineShape51.Y2 = 283;
-            this.lineShape51.Click += new System.EventHandler(this.LineShape51_Click);
+            this.lineShape51.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape41
             // 
@@ -965,6 +965,7 @@
             this.lineShape41.X2 = 980;
             this.lineShape41.Y1 = 233;
             this.lineShape41.Y2 = 233;
+            this.lineShape41.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape40
             // 
@@ -974,6 +975,7 @@
             this.lineShape40.X2 = 971;
             this.lineShape40.Y1 = 233;
             this.lineShape40.Y2 = 233;
+            this.lineShape40.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape30
             // 
@@ -983,6 +985,7 @@
             this.lineShape30.X2 = 288;
             this.lineShape30.Y1 = 233;
             this.lineShape30.Y2 = 233;
+            this.lineShape30.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape29
             // 
@@ -992,6 +995,7 @@
             this.lineShape29.X2 = 307;
             this.lineShape29.Y1 = 233;
             this.lineShape29.Y2 = 233;
+            this.lineShape29.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape50
             // 
@@ -1001,6 +1005,7 @@
             this.lineShape50.X2 = 318;
             this.lineShape50.Y1 = 233;
             this.lineShape50.Y2 = 228;
+            this.lineShape50.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape49
             // 
@@ -1010,6 +1015,7 @@
             this.lineShape49.X2 = 388;
             this.lineShape49.Y1 = 183;
             this.lineShape49.Y2 = 178;
+            this.lineShape49.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape48
             // 
@@ -1019,7 +1025,7 @@
             this.lineShape48.X2 = 318;
             this.lineShape48.Y1 = 183;
             this.lineShape48.Y2 = 228;
-            this.lineShape48.Click += new System.EventHandler(this.LineShape48_Click);
+            this.lineShape48.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape47
             // 
@@ -1029,6 +1035,7 @@
             this.lineShape47.X2 = 884;
             this.lineShape47.Y1 = 178;
             this.lineShape47.Y2 = 181;
+            this.lineShape47.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape46
             // 
@@ -1038,6 +1045,7 @@
             this.lineShape46.X2 = 956;
             this.lineShape46.Y1 = 228;
             this.lineShape46.Y2 = 233;
+            this.lineShape46.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape45
             // 
@@ -1047,7 +1055,7 @@
             this.lineShape45.X2 = 945;
             this.lineShape45.Y1 = 182;
             this.lineShape45.Y2 = 228;
-            this.lineShape45.Click += new System.EventHandler(this.LineShape45_Click);
+            this.lineShape45.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape44
             // 
@@ -1057,7 +1065,7 @@
             this.lineShape44.X2 = 1085;
             this.lineShape44.Y1 = 233;
             this.lineShape44.Y2 = 233;
-            this.lineShape44.Click += new System.EventHandler(this.LineShape44_Click);
+            this.lineShape44.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape43
             // 
@@ -1067,6 +1075,7 @@
             this.lineShape43.X2 = 956;
             this.lineShape43.Y1 = 233;
             this.lineShape43.Y2 = 233;
+            this.lineShape43.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape42
             // 
@@ -1076,7 +1085,7 @@
             this.lineShape42.X2 = 945;
             this.lineShape42.Y1 = 233;
             this.lineShape42.Y2 = 233;
-            this.lineShape42.Click += new System.EventHandler(this.LineShape42_Click);
+            this.lineShape42.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape39
             // 
@@ -1094,7 +1103,7 @@
             this.lineShape38.X2 = 858;
             this.lineShape38.Y1 = 233;
             this.lineShape38.Y2 = 233;
-            this.lineShape38.Click += new System.EventHandler(this.LineShape38_Click);
+            this.lineShape38.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape37
             // 
@@ -1112,7 +1121,7 @@
             this.lineShape36.X2 = 768;
             this.lineShape36.Y1 = 233;
             this.lineShape36.Y2 = 233;
-            this.lineShape36.Click += new System.EventHandler(this.LineShape36_Click);
+            this.lineShape36.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape35
             // 
@@ -1130,7 +1139,7 @@
             this.lineShape34.X2 = 677;
             this.lineShape34.Y1 = 233;
             this.lineShape34.Y2 = 233;
-            this.lineShape34.Click += new System.EventHandler(this.LineShape34_Click);
+            this.lineShape34.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape33
             // 
@@ -1148,7 +1157,7 @@
             this.lineShape32.X2 = 586;
             this.lineShape32.Y1 = 233;
             this.lineShape32.Y2 = 233;
-            this.lineShape32.Click += new System.EventHandler(this.LineShape32_Click);
+            this.lineShape32.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape31
             // 
@@ -1166,7 +1175,7 @@
             this.lineShape28.X2 = 405;
             this.lineShape28.Y1 = 233;
             this.lineShape28.Y2 = 233;
-            this.lineShape28.Click += new System.EventHandler(this.LineShape28_Click);
+            this.lineShape28.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape27
             // 
@@ -1176,6 +1185,7 @@
             this.lineShape27.X2 = 318;
             this.lineShape27.Y1 = 233;
             this.lineShape27.Y2 = 233;
+            this.lineShape27.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape26
             // 
@@ -1185,7 +1195,7 @@
             this.lineShape26.X2 = 276;
             this.lineShape26.Y1 = 233;
             this.lineShape26.Y2 = 233;
-            this.lineShape26.Click += new System.EventHandler(this.LineShape26_Click);
+            this.lineShape26.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape25
             // 
@@ -1195,7 +1205,7 @@
             this.lineShape25.X2 = 1085;
             this.lineShape25.Y1 = 130;
             this.lineShape25.Y2 = 130;
-            this.lineShape25.Click += new System.EventHandler(this.LineShape25_Click);
+            this.lineShape25.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape24
             // 
@@ -1205,7 +1215,7 @@
             this.lineShape24.X2 = 956;
             this.lineShape24.Y1 = 130;
             this.lineShape24.Y2 = 173;
-            this.lineShape24.Click += new System.EventHandler(this.LineShape24_Click);
+            this.lineShape24.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape23
             // 
@@ -1215,7 +1225,7 @@
             this.lineShape23.X2 = 1085;
             this.lineShape23.Y1 = 178;
             this.lineShape23.Y2 = 178;
-            this.lineShape23.Click += new System.EventHandler(this.LineShape23_Click);
+            this.lineShape23.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape22
             // 
@@ -1225,6 +1235,7 @@
             this.lineShape22.X2 = 956;
             this.lineShape22.Y1 = 178;
             this.lineShape22.Y2 = 173;
+            this.lineShape22.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape21
             // 
@@ -1234,6 +1245,7 @@
             this.lineShape21.X2 = 956;
             this.lineShape21.Y1 = 178;
             this.lineShape21.Y2 = 178;
+            this.lineShape21.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape20
             // 
@@ -1243,7 +1255,7 @@
             this.lineShape20.X2 = 945;
             this.lineShape20.Y1 = 178;
             this.lineShape20.Y2 = 178;
-            this.lineShape20.Click += new System.EventHandler(this.LineShape20_Click);
+            this.lineShape20.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape19
             // 
@@ -1253,6 +1265,7 @@
             this.lineShape19.X2 = 873;
             this.lineShape19.Y1 = 178;
             this.lineShape19.Y2 = 178;
+            this.lineShape19.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape18
             // 
@@ -1262,6 +1275,7 @@
             this.lineShape18.X2 = 884;
             this.lineShape18.Y1 = 178;
             this.lineShape18.Y2 = 178;
+            this.lineShape18.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape17
             // 
@@ -1271,6 +1285,7 @@
             this.lineShape17.X2 = 404;
             this.lineShape17.Y1 = 178;
             this.lineShape17.Y2 = 178;
+            this.lineShape17.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape16
             // 
@@ -1288,7 +1303,7 @@
             this.lineShape15.X2 = 858;
             this.lineShape15.Y1 = 178;
             this.lineShape15.Y2 = 178;
-            this.lineShape15.Click += new System.EventHandler(this.LineShape15_Click);
+            this.lineShape15.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape14
             // 
@@ -1306,7 +1321,7 @@
             this.lineShape13.X2 = 768;
             this.lineShape13.Y1 = 178;
             this.lineShape13.Y2 = 178;
-            this.lineShape13.Click += new System.EventHandler(this.LineShape13_Click);
+            this.lineShape13.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape12
             // 
@@ -1324,7 +1339,7 @@
             this.lineShape11.X2 = 677;
             this.lineShape11.Y1 = 178;
             this.lineShape11.Y2 = 178;
-            this.lineShape11.Click += new System.EventHandler(this.LineShape11_Click);
+            this.lineShape11.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape10
             // 
@@ -1350,7 +1365,7 @@
             this.lineShape8.X2 = 586;
             this.lineShape8.Y1 = 178;
             this.lineShape8.Y2 = 178;
-            this.lineShape8.Click += new System.EventHandler(this.LineShape8_Click);
+            this.lineShape8.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape7
             // 
@@ -1360,6 +1375,7 @@
             this.lineShape7.X2 = 388;
             this.lineShape7.Y1 = 178;
             this.lineShape7.Y2 = 178;
+            this.lineShape7.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape6
             // 
@@ -1369,7 +1385,7 @@
             this.lineShape6.X2 = 373;
             this.lineShape6.Y1 = 178;
             this.lineShape6.Y2 = 178;
-            this.lineShape6.Click += new System.EventHandler(this.LineShape6_Click);
+            this.lineShape6.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape5
             // 
@@ -1379,6 +1395,7 @@
             this.lineShape5.X2 = 318;
             this.lineShape5.Y1 = 178;
             this.lineShape5.Y2 = 178;
+            this.lineShape5.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape4
             // 
@@ -1388,7 +1405,7 @@
             this.lineShape4.X2 = 306;
             this.lineShape4.Y1 = 178;
             this.lineShape4.Y2 = 178;
-            this.lineShape4.Click += new System.EventHandler(this.LineShape4_Click);
+            this.lineShape4.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape3
             // 
@@ -1398,6 +1415,7 @@
             this.lineShape3.X2 = 318;
             this.lineShape3.Y1 = 173;
             this.lineShape3.Y2 = 178;
+            this.lineShape3.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape2
             // 
@@ -1407,7 +1425,7 @@
             this.lineShape2.X2 = 306;
             this.lineShape2.Y1 = 130;
             this.lineShape2.Y2 = 173;
-            this.lineShape2.Click += new System.EventHandler(this.LineShape2_Click);
+            this.lineShape2.Click += new System.EventHandler(this.LineShape_Click);
             // 
             // lineShape1
             // 
@@ -1417,17 +1435,17 @@
             this.lineShape1.X2 = 250;
             this.lineShape1.Y1 = 130;
             this.lineShape1.Y2 = 130;
-            this.lineShape1.Click += new System.EventHandler(this.LineShape1_Click);
+            this.lineShape1.Click += new System.EventHandler(this.LineShape_Click);
             // 
-            // 复位_左
+            // 复位
             // 
-            this.复位_左.Location = new System.Drawing.Point(31, 56);
-            this.复位_左.Name = "复位_左";
-            this.复位_左.Size = new System.Drawing.Size(75, 23);
-            this.复位_左.TabIndex = 1;
-            this.复位_左.Text = "复位（左）";
-            this.复位_左.UseVisualStyleBackColor = true;
-            this.复位_左.Click += new System.EventHandler(this.复位_Click);
+            this.复位.Location = new System.Drawing.Point(31, 56);
+            this.复位.Name = "复位";
+            this.复位.Size = new System.Drawing.Size(75, 23);
+            this.复位.TabIndex = 1;
+            this.复位.Text = "复位";
+            this.复位.UseVisualStyleBackColor = true;
+            this.复位.Click += new System.EventHandler(this.复位_Click);
             // 
             // 二接近
             // 
@@ -1474,24 +1492,15 @@
             this.发码显示.Text = "发码显示";
             this.发码显示.UseVisualStyleBackColor = true;
             // 
-            // 停止
+            // 开车
             // 
-            this.停止.Location = new System.Drawing.Point(31, 127);
-            this.停止.Name = "停止";
-            this.停止.Size = new System.Drawing.Size(75, 23);
-            this.停止.TabIndex = 7;
-            this.停止.Text = "停止";
-            this.停止.UseVisualStyleBackColor = true;
-            // 
-            // 复位_右
-            // 
-            this.复位_右.Location = new System.Drawing.Point(31, 91);
-            this.复位_右.Name = "复位_右";
-            this.复位_右.Size = new System.Drawing.Size(75, 23);
-            this.复位_右.TabIndex = 8;
-            this.复位_右.Text = "复位（右）";
-            this.复位_右.UseVisualStyleBackColor = true;
-            this.复位_右.Click += new System.EventHandler(this.复位_右_Click);
+            this.开车.Location = new System.Drawing.Point(31, 127);
+            this.开车.Name = "开车";
+            this.开车.Size = new System.Drawing.Size(75, 23);
+            this.开车.TabIndex = 7;
+            this.开车.Text = "开车";
+            this.开车.UseVisualStyleBackColor = true;
+            this.开车.Click += new System.EventHandler(this.开车_Click);
             // 
             // 一接近
             // 
@@ -1505,9 +1514,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(179, 114);
+            this.pictureBox1.Location = new System.Drawing.Point(179, 156);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(49, 17);
+            this.pictureBox1.Size = new System.Drawing.Size(40, 23);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
@@ -1516,9 +1525,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1009, 38);
+            this.pictureBox2.Location = new System.Drawing.Point(1046, 156);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(62, 17);
+            this.pictureBox2.Size = new System.Drawing.Size(40, 23);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
@@ -1526,7 +1535,6 @@
             // 
             // timer1
             // 
-            this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
             // pictureBox3
@@ -1534,7 +1542,7 @@
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(945, 383);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(49, 17);
+            this.pictureBox3.Size = new System.Drawing.Size(40, 23);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 12;
             this.pictureBox3.TabStop = false;
@@ -1544,7 +1552,7 @@
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(276, 368);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(62, 17);
+            this.pictureBox4.Size = new System.Drawing.Size(40, 23);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 13;
             this.pictureBox4.TabStop = false;
@@ -1559,14 +1567,13 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.一接近);
-            this.Controls.Add(this.复位_右);
-            this.Controls.Add(this.停止);
+            this.Controls.Add(this.开车);
             this.Controls.Add(this.发码显示);
             this.Controls.Add(this.电路显示);
             this.Controls.Add(this.一般信号点);
             this.Controls.Add(this.三接近);
             this.Controls.Add(this.二接近);
-            this.Controls.Add(this.复位_左);
+            this.Controls.Add(this.复位);
             this.Controls.Add(this.shapeContainer1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -1698,14 +1705,13 @@
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape3;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
-        private System.Windows.Forms.Button 复位_左;
+        private System.Windows.Forms.Button 复位;
         private System.Windows.Forms.Button 二接近;
         private System.Windows.Forms.Button 三接近;
         private System.Windows.Forms.Button 一般信号点;
         private System.Windows.Forms.Button 电路显示;
         private System.Windows.Forms.Button 发码显示;
-        private System.Windows.Forms.Button 停止;
-        private System.Windows.Forms.Button 复位_右;
+        private System.Windows.Forms.Button 开车;
         private System.Windows.Forms.Button 一接近;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape98;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape97;
