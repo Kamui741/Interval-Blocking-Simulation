@@ -1377,7 +1377,7 @@
             // 
             // 停车2
             // 
-            this.停车2.Location = new System.Drawing.Point(31, 208);
+            this.停车2.Location = new System.Drawing.Point(28, 250);
             this.停车2.Name = "停车2";
             this.停车2.Size = new System.Drawing.Size(75, 23);
             this.停车2.TabIndex = 4;
@@ -1387,7 +1387,7 @@
             // 
             // 开车2
             // 
-            this.开车2.Location = new System.Drawing.Point(31, 170);
+            this.开车2.Location = new System.Drawing.Point(28, 212);
             this.开车2.Name = "开车2";
             this.开车2.Size = new System.Drawing.Size(75, 23);
             this.开车2.TabIndex = 5;
@@ -1397,7 +1397,7 @@
             // 
             // 停车1
             // 
-            this.停车1.Location = new System.Drawing.Point(31, 131);
+            this.停车1.Location = new System.Drawing.Point(28, 173);
             this.停车1.Name = "停车1";
             this.停车1.Size = new System.Drawing.Size(75, 23);
             this.停车1.TabIndex = 6;
@@ -1407,7 +1407,7 @@
             // 
             // 开车1
             // 
-            this.开车1.Location = new System.Drawing.Point(31, 93);
+            this.开车1.Location = new System.Drawing.Point(28, 135);
             this.开车1.Name = "开车1";
             this.开车1.Size = new System.Drawing.Size(75, 23);
             this.开车1.TabIndex = 7;

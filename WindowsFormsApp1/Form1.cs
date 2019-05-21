@@ -47,6 +47,20 @@ namespace WindowsFormsApp1
             lx1 = 0; lx2 = 0; ly1 = 0; ly2 = 0;
             pic2click = 0;
             pic1click = 0;
+            for (int i = 1; i < 15; i += 2)
+            {
+                oval1[i].BackColor = Color.Green;
+                oval2[i].BackColor = Color.Green;
+                if (i + 1 < 15)
+                {
+                    oval1[i + 1].BackColor = Color.White;
+                    oval2[i + 1].BackColor = Color.White;
+                }
+            }
+            for (int i = 0; i < 20; i++)
+            {
+                lines[i].BorderColor = Color.Black;
+            }
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -61,17 +75,19 @@ namespace WindowsFormsApp1
             x2 = pictureBox2.Location.X+20;
             y2 = pictureBox2.Location.Y;
             pic2click = 1;
+            pic1click = 0;
         }
         private void PictureBox1_Click(object sender, EventArgs e)
         {
             x1 = pictureBox1.Location.X+20;
             y1 = pictureBox1.Location.Y;
             pic1click = 1;
+            pic2click = 0;
         }
         private void LineShape_Click(object sender, EventArgs e)
         {
             LineShape lineShape = (LineShape)sender;
-            if (pic2click==1)
+            if (pic2click == 1)
             {
                 lx2 = (lineShape.X1 + lineShape.X2) / 2;
                 ly2 = (lineShape.Y1 + lineShape.Y2) / 2;
@@ -119,8 +135,10 @@ namespace WindowsFormsApp1
         {
             Straight(10, x1, lx1, pictureBox1);
             if (Math.Abs(pictureBox1.Location.X + 20 - lx1) < 10)
-            {                    
-                ReSet();
+            {
+                x1 = 0; y1 = 0;
+                lx1 = 0;ly1 = 0;
+                pic1click = 0;
                 timer1.Stop();
             }
             for (int i = 0; i < 20; i++)
@@ -140,33 +158,29 @@ namespace WindowsFormsApp1
                     lines[i].BorderColor = Color.Black;
                 }
             }
-            if (pictureBox1.Location.Y - ly1 == 22)
+            for (int i = 1; i < 15; i+=2)
             {
-                for (int i = 1; i < 15; i += 2)
+                if(Math.Abs(pictureBox1.Location.X +40 - oval1[i].Location.X+13)<=5)
                 {
-                    if (Math.Abs(pictureBox1.Location.X + 40 - oval1[i].Location.X + 13) <= 5)
+                    oval1[i].BackColor = Color.Red;
+                    if ((i - 2) > 0 )
                     {
-                        oval1[i].BackColor = Color.Red;
-                        if ((i - 2) > 0)
-                        {
-                            oval1[i - 2].BackColor = Color.Yellow;
-                        }
-                        if ((i - 3) > 0)
-                        {
-                            oval1[i - 3].BackColor = Color.Yellow;
-                        }
-                        if ((i - 4) > 0)
-                        {
-                            oval1[i - 4].BackColor = Color.Green;
-                        }
-                        if ((i - 5) > 0)
-                        {
-                            oval1[i - 5].BackColor = Color.White;
-                        }
+                        oval1[i - 2].BackColor = Color.Yellow;
                     }
-                }
+                    if ((i - 3) > 0 )
+                    {
+                        oval1[i - 3].BackColor = Color.Yellow;
+                    }
+                    if ((i - 4) > 0 )
+                    {
+                        oval1[i - 4].BackColor = Color.Green;
+                    }
+                    if ((i - 5) > 0 )
+                    {
+                        oval1[i - 5].BackColor = Color.White;
+                    }
+                }    
             }
-                
             if (Math.Abs(pictureBox1.Location.X+40 - 1039)<=5)
             {
                 for (int i = 1; i < 15; i += 2)
@@ -178,7 +192,6 @@ namespace WindowsFormsApp1
             if (Math.Abs(pictureBox1.Location.X + 40 - 1124) <= 5)
             {
                 timer1.Stop();
-                ReSet();
             }
         }
         private void Timer2_Tick(object sender, EventArgs e)
@@ -186,7 +199,10 @@ namespace WindowsFormsApp1
             Straight(10, x2, lx2, pictureBox2);
             if (Math.Abs(pictureBox2.Location.X + 20 - lx2) < 10)
             {
-                ReSet();
+                x2 = 0; y2 = 0;
+                lx2 = 0;ly2 = 0;
+                pic2click = 0;
+                
                 timer2.Stop();
             }
             for (int i = 0; i < 20; i++)
@@ -207,33 +223,30 @@ namespace WindowsFormsApp1
                     lines[i].BorderColor = Color.Black;
                 }
             }
-            if (pictureBox2.Location.Y - ly2 == 22)
+            for (int i = 1; i < 15; i += 2)
             {
-                for (int i = 1; i < 15; i += 2)
+                if (Math.Abs(pictureBox2.Location.X - oval2[i].Location.X - 14) <= 5)
                 {
-                    if (Math.Abs(pictureBox2.Location.X - oval2[i].Location.X - 14) <= 5)
+                    oval2[i].BackColor = Color.Red;
+                    if ((i - 2) > 0)
                     {
-                        oval2[i].BackColor = Color.Red;
-                        if ((i - 2) > 0)
-                        {
-                            oval2[i - 2].BackColor = Color.Yellow;
-                        }
-                        if ((i - 3) > 0)
-                        {
-                            oval2[i - 3].BackColor = Color.Yellow;
-                        }
-                        if ((i - 4) > 0)
-                        {
-                            oval2[i - 4].BackColor = Color.Green;
-                        }
-                        if ((i - 5) > 0)
-                        {
-                            oval2[i - 5].BackColor = Color.White;
-                        }
+                        oval2[i - 2].BackColor = Color.Yellow;
+                    }
+                    if ((i - 3) > 0)
+                    {
+                        oval2[i - 3].BackColor = Color.Yellow;
+                    }
+                    if ((i - 4) > 0)
+                    {
+                        oval2[i - 4].BackColor = Color.Green;
+                    }
+                    if ((i - 5) > 0)
+                    {
+                        oval2[i - 5].BackColor = Color.White;
                     }
                 }
+
             }
-                
             if (Math.Abs(pictureBox2.Location.X - 235) <= 5)
             {
                 for (int i = 1; i < 15; i += 2)
