@@ -151,13 +151,10 @@
             this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.二接近 = new System.Windows.Forms.Button();
-            this.三接近 = new System.Windows.Forms.Button();
             this.停车2 = new System.Windows.Forms.Button();
             this.开车2 = new System.Windows.Forms.Button();
             this.停车1 = new System.Windows.Forms.Button();
             this.开车1 = new System.Windows.Forms.Button();
-            this.一接近 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -449,7 +446,7 @@
             // 
             // ovalShape29
             // 
-            this.ovalShape29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ovalShape29.BackColor = System.Drawing.Color.Green;
             this.ovalShape29.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
             this.ovalShape29.Location = new System.Drawing.Point(418, 141);
             this.ovalShape29.Name = "ovalShape29";
@@ -465,7 +462,7 @@
             // 
             // ovalShape4
             // 
-            this.ovalShape4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ovalShape4.BackColor = System.Drawing.Color.Green;
             this.ovalShape4.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
             this.ovalShape4.Location = new System.Drawing.Point(376, 254);
             this.ovalShape4.Name = "ovalShape4";
@@ -505,7 +502,7 @@
             // 
             // ovalShape27
             // 
-            this.ovalShape27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ovalShape27.BackColor = System.Drawing.Color.Green;
             this.ovalShape27.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
             this.ovalShape27.Location = new System.Drawing.Point(468, 254);
             this.ovalShape27.Name = "ovalShape27";
@@ -529,7 +526,7 @@
             // 
             // ovalShape25
             // 
-            this.ovalShape25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ovalShape25.BackColor = System.Drawing.Color.Green;
             this.ovalShape25.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
             this.ovalShape25.Location = new System.Drawing.Point(559, 254);
             this.ovalShape25.Name = "ovalShape25";
@@ -553,7 +550,7 @@
             // 
             // ovalShape23
             // 
-            this.ovalShape23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ovalShape23.BackColor = System.Drawing.Color.Green;
             this.ovalShape23.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
             this.ovalShape23.Location = new System.Drawing.Point(651, 254);
             this.ovalShape23.Name = "ovalShape23";
@@ -577,7 +574,7 @@
             // 
             // ovalShape21
             // 
-            this.ovalShape21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ovalShape21.BackColor = System.Drawing.Color.Green;
             this.ovalShape21.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
             this.ovalShape21.Location = new System.Drawing.Point(739, 254);
             this.ovalShape21.Name = "ovalShape21";
@@ -601,7 +598,7 @@
             // 
             // ovalShape19
             // 
-            this.ovalShape19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ovalShape19.BackColor = System.Drawing.Color.Green;
             this.ovalShape19.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
             this.ovalShape19.Location = new System.Drawing.Point(829, 254);
             this.ovalShape19.Name = "ovalShape19";
@@ -625,7 +622,7 @@
             // 
             // ovalShape17
             // 
-            this.ovalShape17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ovalShape17.BackColor = System.Drawing.Color.Green;
             this.ovalShape17.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
             this.ovalShape17.Location = new System.Drawing.Point(1009, 254);
             this.ovalShape17.Name = "ovalShape17";
@@ -649,7 +646,7 @@
             // 
             // ovalShape15
             // 
-            this.ovalShape15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ovalShape15.BackColor = System.Drawing.Color.Green;
             this.ovalShape15.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
             this.ovalShape15.Location = new System.Drawing.Point(870, 141);
             this.ovalShape15.Name = "ovalShape15";
@@ -673,7 +670,7 @@
             // 
             // ovalShape13
             // 
-            this.ovalShape13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ovalShape13.BackColor = System.Drawing.Color.Green;
             this.ovalShape13.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
             this.ovalShape13.Location = new System.Drawing.Point(781, 141);
             this.ovalShape13.Name = "ovalShape13";
@@ -689,7 +686,7 @@
             // 
             // ovalShape12
             // 
-            this.ovalShape12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ovalShape12.BackColor = System.Drawing.Color.Green;
             this.ovalShape12.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
             this.ovalShape12.Location = new System.Drawing.Point(691, 141);
             this.ovalShape12.Name = "ovalShape12";
@@ -713,7 +710,7 @@
             // 
             // ovalShape10
             // 
-            this.ovalShape10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ovalShape10.BackColor = System.Drawing.Color.Green;
             this.ovalShape10.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
             this.ovalShape10.Location = new System.Drawing.Point(600, 141);
             this.ovalShape10.Name = "ovalShape10";
@@ -737,7 +734,7 @@
             // 
             // ovalShape8
             // 
-            this.ovalShape8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ovalShape8.BackColor = System.Drawing.Color.Green;
             this.ovalShape8.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
             this.ovalShape8.Location = new System.Drawing.Point(509, 141);
             this.ovalShape8.Name = "ovalShape8";
@@ -761,7 +758,7 @@
             // 
             // ovalShape6
             // 
-            this.ovalShape6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ovalShape6.BackColor = System.Drawing.Color.Green;
             this.ovalShape6.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
             this.ovalShape6.Location = new System.Drawing.Point(247, 141);
             this.ovalShape6.Name = "ovalShape6";
@@ -771,6 +768,7 @@
             // 
             this.ovalShape5.BackColor = System.Drawing.Color.White;
             this.ovalShape5.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
+            this.ovalShape5.FillGradientColor = System.Drawing.Color.White;
             this.ovalShape5.Location = new System.Drawing.Point(264, 141);
             this.ovalShape5.Name = "ovalShape5";
             this.ovalShape5.Size = new System.Drawing.Size(18, 18);
@@ -1377,24 +1375,6 @@
             this.lineShape1.Click += new System.EventHandler(this.LineShape_Click);
             this.lineShape1.DoubleClick += new System.EventHandler(this.LineShape_DoubleClick);
             // 
-            // 二接近
-            // 
-            this.二接近.Location = new System.Drawing.Point(31, 315);
-            this.二接近.Name = "二接近";
-            this.二接近.Size = new System.Drawing.Size(75, 23);
-            this.二接近.TabIndex = 2;
-            this.二接近.Text = "二接近";
-            this.二接近.UseVisualStyleBackColor = true;
-            // 
-            // 三接近
-            // 
-            this.三接近.Location = new System.Drawing.Point(31, 278);
-            this.三接近.Name = "三接近";
-            this.三接近.Size = new System.Drawing.Size(75, 23);
-            this.三接近.TabIndex = 3;
-            this.三接近.Text = "三接近";
-            this.三接近.UseVisualStyleBackColor = true;
-            // 
             // 停车2
             // 
             this.停车2.Location = new System.Drawing.Point(31, 208);
@@ -1435,19 +1415,10 @@
             this.开车1.UseVisualStyleBackColor = true;
             this.开车1.Click += new System.EventHandler(this.开车_Click);
             // 
-            // 一接近
-            // 
-            this.一接近.Location = new System.Drawing.Point(31, 350);
-            this.一接近.Name = "一接近";
-            this.一接近.Size = new System.Drawing.Size(75, 23);
-            this.一接近.TabIndex = 9;
-            this.一接近.Text = "一接近";
-            this.一接近.UseVisualStyleBackColor = true;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(519, 156);
+            this.pictureBox1.Location = new System.Drawing.Point(150, 156);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 23);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1458,7 +1429,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(617, 211);
+            this.pictureBox2.Location = new System.Drawing.Point(1085, 211);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(40, 23);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1478,17 +1449,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1164, 637);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.一接近);
             this.Controls.Add(this.开车1);
             this.Controls.Add(this.停车1);
             this.Controls.Add(this.开车2);
             this.Controls.Add(this.停车2);
-            this.Controls.Add(this.三接近);
-            this.Controls.Add(this.二接近);
             this.Controls.Add(this.shapeContainer1);
+            this.DoubleBuffered = true;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -1601,13 +1571,10 @@
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape3;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
-        private System.Windows.Forms.Button 二接近;
-        private System.Windows.Forms.Button 三接近;
         private System.Windows.Forms.Button 停车2;
         private System.Windows.Forms.Button 开车2;
         private System.Windows.Forms.Button 停车1;
         private System.Windows.Forms.Button 开车1;
-        private System.Windows.Forms.Button 一接近;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape98;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape97;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape96;

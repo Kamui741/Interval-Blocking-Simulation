@@ -16,6 +16,8 @@ namespace WindowsFormsApp1
         public int x1, y1, x2, y2;
         public int lx1, ly1, lx2, ly2;
         public int Velocity;
+        public int pic1click = 0;
+        public int pic2click = 0;
         LineShape[] lines = new LineShape[21];
         OvalShape[] oval1 = new OvalShape[15];
         OvalShape[] oval2 = new OvalShape[15];
@@ -38,89 +40,81 @@ namespace WindowsFormsApp1
             oval2[4] = ovalShape20; oval2[5] = ovalShape21; oval2[6] = ovalShape22; oval2[7] = ovalShape23;
             oval2[8] = ovalShape24; oval2[9] = ovalShape25; oval2[10] = ovalShape26; oval2[11] = ovalShape27;
             oval2[12] = ovalShape28; oval2[13] = ovalShape4; oval2[14] = ovalShape3;
-
-
         }
         public void ReSet()
         {
-            x1 = 0; y1 = 0;x2 = 0;y2 = 0;
-            
+            x1 = 0; y1 = 0; x2 = 0; y2 = 0;
+            lx1 = 0; lx2 = 0; ly1 = 0; ly2 = 0;
+            pic2click = 0;
+            pic1click = 0;
         }
-        
         private void Form1_Load(object sender, EventArgs e)
         {
-            x1 = 0; y1 = 0; x2 = 0; y2 = 0;
-            lx1 = 0; lx2 = 0;ly1 = 0; ly2 = 0;
+            ReSet();
         }
-
-        private void 停车_Click(object sender, EventArgs e)
-        {
-            timer1.Stop();
-        }
-              
-
-        private void 开车2_Click(object sender, EventArgs e)
-        {
-            timer2.Start();
-        }
-
-        private void 停车2_Click(object sender, EventArgs e)
-        {
-            timer2.Stop();
-        }
-
-        private void 开车_Click(object sender, EventArgs e)
-        {
-            timer1.Start();
-        }
-        
-
+        private void 停车_Click(object sender, EventArgs e) => timer1.Stop();
+        private void 开车2_Click(object sender, EventArgs e) => timer2.Start();
+        private void 停车2_Click(object sender, EventArgs e) => timer2.Stop();
+        private void 开车_Click(object sender, EventArgs e) => timer1.Start();
         private void PictureBox2_Click(object sender, EventArgs e)
         {
             x2 = pictureBox2.Location.X+20;
             y2 = pictureBox2.Location.Y;
+            pic2click = 1;
         }
-
-        
-
         private void PictureBox1_Click(object sender, EventArgs e)
         {
             x1 = pictureBox1.Location.X+20;
             y1 = pictureBox1.Location.Y;
+            pic1click = 1;
         }
-
         private void LineShape_Click(object sender, EventArgs e)
         {
             LineShape lineShape = (LineShape)sender;
-            if (x2 != 0 && y2 != 0)
+            if (pic2click==1)
             {
                 lx2 = (lineShape.X1 + lineShape.X2) / 2;
                 ly2 = (lineShape.Y1 + lineShape.Y2) / 2;
             }
-            lx1 = (lineShape.X1 + lineShape.X2) / 2;
-            ly1 = (lineShape.Y1 + lineShape.Y2) / 2;
+            if (pic1click == 1)
+            {
+                lx1 = (lineShape.X1 + lineShape.X2) / 2;
+                ly1 = (lineShape.Y1 + lineShape.Y2) / 2;
+            }
+            
         }
         private void LineShape_DoubleClick(object sender, EventArgs e)
         {
             LineShape lineShape = (LineShape)sender;
-            if (x2 != 0 && y2 != 0)
+            if (pic2click == 1)
             {
                 lx2 = (lineShape.X1 + lineShape.X2) / 2;
                 ly2 = (lineShape.Y1 + lineShape.Y2) / 2;
-                pictureBox2.Location = new Point(lx2, ly2);
+                pictureBox2.Location = new Point(lx2 - 20, ly2 - 22);
                 ReSet();
             }
-            lx1 = (lineShape.X1 + lineShape.X2) / 2;
-            ly1 = (lineShape.Y1 + lineShape.Y2) / 2;
-            pictureBox1.Location = new Point(lx1-20, ly1-22);
-            ReSet();
+            if (pic1click == 1)
+            {
+                lx1 = (lineShape.X1 + lineShape.X2) / 2;
+                ly1 = (lineShape.Y1 + lineShape.Y2) / 2;
+                pictureBox1.Location = new Point(lx1 - 20, ly1 - 22);
+                ReSet();
+            }
         }
         public void Straight(int v, int start, int end, PictureBox pictureBox)
         {
-            pictureBox.Left += v * (end - start) / Math.Abs(end - start);//异常处理
-        }
+            try
+            {
+                pictureBox.Left += v * (end - start) / Math.Abs(end - start);
+            }
+            catch (Exception)
+            {
+                timer1.Stop();
+                timer2.Stop();
+                MessageBox.Show("请正常办理进路！");
+            }
 
-       
+        }
         private void Timer1_Tick(object sender, EventArgs e)
         {
             Straight(10, x1, lx1, pictureBox1);
@@ -135,7 +129,7 @@ namespace WindowsFormsApp1
                 {
                     if((pictureBox1.Location.X + 40 >= lines[i].X1) && (pictureBox1.Location.X+40 <= lines[i].X2))
                     {
-                        lines[i].BorderColor = Color.Red
+                        lines[i].BorderColor = Color.Red;
                     }else
                     {
                         lines[i].BorderColor = Color.Black;
@@ -146,14 +140,112 @@ namespace WindowsFormsApp1
                     lines[i].BorderColor = Color.Black;
                 }
             }
-            for (int i = 1; i < 15; i=i+2)
+            if (pictureBox1.Location.Y - ly1 == 22)
             {
-                if(pictureBox1.Location.X +40 >=oval1[i].Location.X)
+                for (int i = 1; i < 15; i += 2)
+                {
+                    if (Math.Abs(pictureBox1.Location.X + 40 - oval1[i].Location.X + 13) <= 5)
+                    {
+                        oval1[i].BackColor = Color.Red;
+                        if ((i - 2) > 0)
+                        {
+                            oval1[i - 2].BackColor = Color.Yellow;
+                        }
+                        if ((i - 3) > 0)
+                        {
+                            oval1[i - 3].BackColor = Color.Yellow;
+                        }
+                        if ((i - 4) > 0)
+                        {
+                            oval1[i - 4].BackColor = Color.Green;
+                        }
+                        if ((i - 5) > 0)
+                        {
+                            oval1[i - 5].BackColor = Color.White;
+                        }
+                    }
+                }
+            }
+                
+            if (Math.Abs(pictureBox1.Location.X+40 - 1039)<=5)
+            {
+                for (int i = 1; i < 15; i += 2)
+                {
+                    oval1[i].BackColor = Color.Green;
+                }
+                oval1[10].BackColor = Color.White;
+            }
+            if (Math.Abs(pictureBox1.Location.X + 40 - 1124) <= 5)
+            {
+                timer1.Stop();
+                ReSet();
             }
         }
         private void Timer2_Tick(object sender, EventArgs e)
         {
-
+            Straight(10, x2, lx2, pictureBox2);
+            if (Math.Abs(pictureBox2.Location.X + 20 - lx2) < 10)
+            {
+                ReSet();
+                timer2.Stop();
+            }
+            for (int i = 0; i < 20; i++)
+            {
+                if (pictureBox2.Location.Y == lines[i].Y1 - 22)
+                {
+                    if ((pictureBox2.Location.X <= lines[i].X2) && (pictureBox2.Location.X >= lines[i].X1))
+                    {
+                        lines[i].BorderColor = Color.Red;
+                    }
+                    else
+                    {
+                        lines[i].BorderColor = Color.Black;
+                    }
+                }
+                else
+                {
+                    lines[i].BorderColor = Color.Black;
+                }
+            }
+            if (pictureBox2.Location.Y - ly2 == 22)
+            {
+                for (int i = 1; i < 15; i += 2)
+                {
+                    if (Math.Abs(pictureBox2.Location.X - oval2[i].Location.X - 14) <= 5)
+                    {
+                        oval2[i].BackColor = Color.Red;
+                        if ((i - 2) > 0)
+                        {
+                            oval2[i - 2].BackColor = Color.Yellow;
+                        }
+                        if ((i - 3) > 0)
+                        {
+                            oval2[i - 3].BackColor = Color.Yellow;
+                        }
+                        if ((i - 4) > 0)
+                        {
+                            oval2[i - 4].BackColor = Color.Green;
+                        }
+                        if ((i - 5) > 0)
+                        {
+                            oval2[i - 5].BackColor = Color.White;
+                        }
+                    }
+                }
+            }
+                
+            if (Math.Abs(pictureBox2.Location.X - 235) <= 5)
+            {
+                for (int i = 1; i < 15; i += 2)
+                {
+                    oval2[i].BackColor = Color.Green;
+                }
+                oval2[10].BackColor = Color.White;
+            }
+            if (Math.Abs(pictureBox2.Location.X - 150) <= 5)
+            {
+                timer2.Stop();
+            }
         }
     }
 }
