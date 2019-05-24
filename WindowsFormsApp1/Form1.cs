@@ -36,7 +36,7 @@ namespace WindowsFormsApp1
             oval1[8] = ovalShape9; oval1[9] = ovalShape12; oval1[10] = ovalShape11; oval1[11] = ovalShape13;
             oval1[12] = ovalShape14; oval1[13] = ovalShape15; oval1[14] = ovalShape16;
 
-            oval1[0] = ovalShape1; oval2[1] = ovalShape17; oval2[2] = ovalShape18; oval2[3] = ovalShape19;
+            oval2[0] = ovalShape1; oval2[1] = ovalShape17; oval2[2] = ovalShape18; oval2[3] = ovalShape19;
             oval2[4] = ovalShape20; oval2[5] = ovalShape21; oval2[6] = ovalShape22; oval2[7] = ovalShape23;
             oval2[8] = ovalShape24; oval2[9] = ovalShape25; oval2[10] = ovalShape26; oval2[11] = ovalShape27;
             oval2[12] = ovalShape28; oval2[13] = ovalShape4; oval2[14] = ovalShape3;
