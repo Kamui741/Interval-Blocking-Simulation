@@ -15,9 +15,11 @@ namespace WindowsFormsApp1
     {
         public int x1, y1, x2, y2;
         public int lx1, ly1, lx2, ly2;
-        public int Velocity;
+        public int Velocity1 = 10;
+        public int Velocity2 = 10;
         public int pic1click = 0;
         public int pic2click = 0;
+        public int flag = 0;
         LineShape[] lines = new LineShape[21];
         OvalShape[] oval1 = new OvalShape[15];
         OvalShape[] oval2 = new OvalShape[15];
@@ -47,6 +49,7 @@ namespace WindowsFormsApp1
             lx1 = 0; lx2 = 0; ly1 = 0; ly2 = 0;
             pic2click = 0;
             pic1click = 0;
+            flag = 1;
             for (int i = 1; i < 15; i += 2)
             {
                 oval1[i].BackColor = Color.Green;
@@ -62,10 +65,7 @@ namespace WindowsFormsApp1
                 lines[i].BorderColor = Color.Black;
             }
         }
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            ReSet();
-        }
+        private void Form1_Load(object sender, EventArgs e) => ReSet();
         private void 停车_Click(object sender, EventArgs e) => timer1.Stop();
         private void 开车2_Click(object sender, EventArgs e) => timer2.Start();
         private void 停车2_Click(object sender, EventArgs e) => timer2.Stop();
@@ -77,6 +77,24 @@ namespace WindowsFormsApp1
             pic2click = 1;
             pic1click = 0;
         }
+
+
+        private void PictureBox2_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox2.Image.RotateFlip(RotateFlipType.Rotate180FlipY);
+            pictureBox2.Refresh();
+        }
+
+        private void SetVelocity(ref int v, int num) => v = num;
+
+        private void Button1_Click(object sender, EventArgs e) => SetVelocity(ref Velocity2, 10);
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            SetVelocity(ref Velocity2, 12);
+            flag = 1;
+        }
+
         private void PictureBox1_Click(object sender, EventArgs e)
         {
             x1 = pictureBox1.Location.X+20;
@@ -133,7 +151,7 @@ namespace WindowsFormsApp1
         }
         private void Timer1_Tick(object sender, EventArgs e)
         {
-            Straight(10, x1, lx1, pictureBox1);
+            Straight(Velocity1, x1, lx1, pictureBox1);
             if (Math.Abs(pictureBox1.Location.X + 20 - lx1) < 10)
             {
                 x1 = 0; y1 = 0;
@@ -196,13 +214,23 @@ namespace WindowsFormsApp1
         }
         private void Timer2_Tick(object sender, EventArgs e)
         {
-            Straight(10, x2, lx2, pictureBox2);
+            if((pictureBox1.Location.Y == pictureBox2.Location.Y)&&(pictureBox1.Location.X - pictureBox2.Location.X<=180))
+            {
+                
+                Straight(Velocity2, x2, lx2, pictureBox2);
+                Velocity2 -= Velocity2 > 0 ? 1 : 0;
+            }
+            else
+            {
+                Straight(Velocity2, x2, lx2, pictureBox2);
+            }
+            Straight(Velocity2, x2, lx2, pictureBox2);
             if (Math.Abs(pictureBox2.Location.X + 20 - lx2) < 10)
             {
                 x2 = 0; y2 = 0;
                 lx2 = 0;ly2 = 0;
                 pic2click = 0;
-                
+                flag = 1;
                 timer2.Stop();
             }
             for (int i = 0; i < 20; i++)
@@ -225,7 +253,7 @@ namespace WindowsFormsApp1
             }
             for (int i = 1; i < 15; i += 2)
             {
-                if (Math.Abs(pictureBox2.Location.X - oval2[i].Location.X - 14) <= 5)
+                if ((Math.Abs(pictureBox2.Location.X - oval2[i].Location.X - 14) <= 5) && flag == 0)
                 {
                     oval2[i].BackColor = Color.Red;
                     if ((i - 2) > 0)
