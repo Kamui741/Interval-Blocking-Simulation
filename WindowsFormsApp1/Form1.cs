@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.VisualBasic.PowerPacks;
 
@@ -216,7 +210,6 @@ namespace WindowsFormsApp1
         {
             if((pictureBox1.Location.Y == pictureBox2.Location.Y)&&(pictureBox1.Location.X - pictureBox2.Location.X<=180))
             {
-                
                 Straight(Velocity2, x2, lx2, pictureBox2);
                 Velocity2 -= Velocity2 > 0 ? 1 : 0;
             }
