@@ -1379,7 +1379,7 @@
             // 
             // 停车2
             // 
-            this.停车2.Location = new System.Drawing.Point(28, 250);
+            this.停车2.Location = new System.Drawing.Point(34, 206);
             this.停车2.Name = "停车2";
             this.停车2.Size = new System.Drawing.Size(75, 23);
             this.停车2.TabIndex = 4;
@@ -1389,7 +1389,7 @@
             // 
             // 开车2
             // 
-            this.开车2.Location = new System.Drawing.Point(28, 212);
+            this.开车2.Location = new System.Drawing.Point(34, 168);
             this.开车2.Name = "开车2";
             this.开车2.Size = new System.Drawing.Size(75, 23);
             this.开车2.TabIndex = 5;
@@ -1399,7 +1399,7 @@
             // 
             // 停车1
             // 
-            this.停车1.Location = new System.Drawing.Point(28, 173);
+            this.停车1.Location = new System.Drawing.Point(34, 129);
             this.停车1.Name = "停车1";
             this.停车1.Size = new System.Drawing.Size(75, 23);
             this.停车1.TabIndex = 6;
@@ -1409,7 +1409,7 @@
             // 
             // 开车1
             // 
-            this.开车1.Location = new System.Drawing.Point(28, 135);
+            this.开车1.Location = new System.Drawing.Point(34, 91);
             this.开车1.Name = "开车1";
             this.开车1.Size = new System.Drawing.Size(75, 23);
             this.开车1.TabIndex = 7;
@@ -1450,7 +1450,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(28, 289);
+            this.button1.Location = new System.Drawing.Point(34, 245);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 12;
@@ -1460,7 +1460,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(28, 327);
+            this.button2.Location = new System.Drawing.Point(34, 283);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 13;

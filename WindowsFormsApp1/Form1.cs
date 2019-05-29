@@ -43,7 +43,7 @@ namespace WindowsFormsApp1
             lx1 = 0; lx2 = 0; ly1 = 0; ly2 = 0;
             pic2click = 0;
             pic1click = 0;
-            flag = 1;
+            flag = 0;
             for (int i = 1; i < 15; i += 2)
             {
                 oval1[i].BackColor = Color.Green;
@@ -87,6 +87,13 @@ namespace WindowsFormsApp1
         {
             SetVelocity(ref Velocity2, 12);
             flag = 1;
+            if ((pictureBox2.Location.Y + 22 == ly2)&&(pictureBox2.Location.X<lineShape100.X2))
+            {
+                for (int i = 1; i < 15; i += 2)
+                {
+                    oval2[i].BackColor = Color.Red;
+                }
+            }
         }
 
         private void PictureBox1_Click(object sender, EventArgs e)
